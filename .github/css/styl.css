@@ -1,4 +1,109 @@
-h1 {
+html {
 
-    font-family: cursive;
+    padding: 10px;
+    align-content: center;
+}
+
+body {
+
+    padding: 10px;
+    margin: 0;
+}
+
+/*flexbox*/
+.parent {
+    background-color: #07728c ;
+    margin: 10px;
+    padding: 30px;
+    height: 395px;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row ; /*flex-direction flex-wrap*/
+    justify-content: center;
+}
+
+.logo {
+
+    margin-left: auto;
+    position: absolute;
+
+  
+
+}
+
+.profilicon {
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+.kasseicon {
+    margin-left: 50px;
+    justify-content: flex-end;
+}
+
+.salphoto {
+background-image: url("../Image/hedderbilde.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position-x: right;
+background-position-y: bottom;
+min-height: 70vh;
+position: relative;
+}
+
+
+.salphoto-content {
+
+    font-size: 300px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: -100px;
+    left: 900px;
+}
+
+
+.parent01 {
+    margin: 10px;
+    padding: 30px;
+    height: 395px;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row ; /*flex-direction flex-wrap*/
+    justify-content: space-between;
+
+}
+
+
+.parent02 {
+    margin: 10px;
+    padding: 30px;
+    height: 395px;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row ; /*flex-direction flex-wrap*/
+    justify-content: space-between;
+
+}
+
+.parent03 {
+    margin: 10px;
+    padding: 30px;
+    height: 395px;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row ; /*flex-direction flex-wrap*/
+    justify-content: space-between;
+
+}
+
+.thefooter {
+    display: flex;
+    flex-flow: row ; /*flex-direction flex-wrap*/
+
+}
+
+p {
+align-content: center;
 }
