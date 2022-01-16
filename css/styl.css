@@ -32,28 +32,40 @@ body {
     flex-flow: row ; /*flex-direction flex-wrap*/
     justify-content: center;
     font-size: 25px;
+    font-family: Roboto;
+    
 }
 .Men {
 
     margin-right: 100px;
+    text-decoration: none;
+    color: black;
 }
 
 .Wommen{
 
     margin-right: 100px;
+    text-decoration: none;
+    color: black;
 }
 
 .Menu{
+    text-decoration: none;
+    color: black;
 
 }
 
 .Boots{
     margin-left: 100px;
+    text-decoration: none;
+    color: black;
 }
 
 .Sale{
 
     margin-left: 100px;
+    text-decoration: none;
+    color: black;
 }
 .logo {
 
@@ -139,13 +151,44 @@ width: -webkit-fill-available;
 margin-right: 20px;
 margin-bottom: 2px;
 font-family: 'Roboto light';
-    font-size: 80px;
+    font-size: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.email{
+    position: absolute;
+    top: 2100px;
+    left: 1060px;
+}
+
+.cta {
+    position: absolute;
+    top: 2213px;
+    left: 1350px;
+    outline-style: solid;
+    outline-width: medium;
+    outline-color: #54838F;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.texsta {
+    text-decoration: none;
+    color: black;
 }
 
 h2{
+
 position: absolute;
 color: white;
-left: 1200px;
+left: 1350px;
+top:1900px;
+
 
 }
 .Newsphoto{
@@ -187,11 +230,8 @@ margin-top: 10px;
 .thefooter {
     display: flex;
     flex-flow: row ; /*flex-direction flex-wrap*/
-
-}
-
-p {
-align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .info {
@@ -200,5 +240,22 @@ align-content: center;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+p {
+align-content: center;
+}
+
+.Telephon{
+    margin-left: 20px;
+}
+
+.facbook{
+    margin-left: 20px;
+}
+
+.person{
+    margin-left: 20px;
 }
