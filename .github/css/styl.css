@@ -6,29 +6,59 @@ html {
 
 body {
 
-    padding: 10px;
-    margin: 0;
+    margin: auto;
+    max-width: 1920px;
 }
 
 /*flexbox*/
 .parent {
     background-color: #07728c ;
-    margin: 10px;
+    height: 300px;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Nav
+{
+    background-color: #07728c ;
     padding: 30px;
-    height: 395px;
     max-width: 1920px;
     display: flex;
     flex-flow: row ; /*flex-direction flex-wrap*/
     justify-content: center;
+    font-size: 25px;
+}
+.Men {
+
+    margin-right: 100px;
 }
 
+.Wommen{
+
+    margin-right: 100px;
+}
+
+.Menu{
+
+}
+
+.Boots{
+    margin-left: 100px;
+}
+
+.Sale{
+
+    margin-left: 100px;
+}
 .logo {
 
     margin-left: auto;
     position: absolute;
-
-  
-
 }
 
 .profilicon {
@@ -44,10 +74,9 @@ body {
 
 .salphoto {
 background-image: url("../Image/hedderbilde.jpg");
-background-size: cover;
+background-size: contain;
 background-repeat: no-repeat;
-background-position-x: right;
-background-position-y: bottom;
+
 min-height: 70vh;
 position: relative;
 }
@@ -55,37 +84,91 @@ position: relative;
 
 .salphoto-content {
 
-    font-size: 300px;
+    font-size: 350px;
     color: white;
     position: absolute;
     text-align: center;
-    top: -100px;
-    left: 900px;
+    top: -250px;
+    left: 910px;
+    font-family: 'Arima Madurai', cursive;
+    margin: 0em;
 }
 
 
 .parent01 {
-    margin: 10px;
-    padding: 30px;
-    height: 395px;
     max-width: 1920px;
     display: flex;
     flex-flow: row ; /*flex-direction flex-wrap*/
     justify-content: space-between;
 
 }
+
+.Hiking-gere {
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.Hiking-boots {
+margin-right: auto;
+justify-content: flex-start;
+margin-left: 20px;
+}
+
 
 
 .parent02 {
-    margin: 10px;
-    padding: 30px;
-    height: 395px;
+   
+   
     max-width: 1920px;
     display: flex;
     flex-flow: row ; /*flex-direction flex-wrap*/
-    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.material {
+
+    position: relative;
+}
+
+.mail {
+background-color: #8F4F14;
+margin-left: 10px;
+width: -webkit-fill-available;
+margin-right: 20px;
+margin-bottom: 2px;
+font-family: 'Roboto light';
+    font-size: 80px;
+}
+
+h2{
+position: absolute;
+color: white;
+left: 1200px;
 
 }
+.Newsphoto{
+
+background-image: url("../Image/newsbackground.png");
+background-size: 1920px;
+background-repeat: no-repeat;
+min-height: 70vh;
+position: relative;
+margin-top: 10px;
+}
+
+.News-content {
+    font-size: 330px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: -100px;
+    left: 450px;
+    font-family: 'Arima Madurai', cursive;
+}  
+
+
 
 .parent03 {
     margin: 10px;
@@ -95,8 +178,11 @@ position: relative;
     display: flex;
     flex-flow: row ; /*flex-direction flex-wrap*/
     justify-content: space-between;
+    margin-top: 200px;
 
 }
+
+
 
 .thefooter {
     display: flex;
@@ -106,4 +192,13 @@ position: relative;
 
 p {
 align-content: center;
+}
+
+.info {
+    max-width: 1920px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
 }
