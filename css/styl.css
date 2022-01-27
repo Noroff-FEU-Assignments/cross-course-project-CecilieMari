@@ -179,8 +179,12 @@ a {
 /*the index.html page*/
 
 .salphoto {
+<<<<<<< Updated upstream
 background-image: url("../Image/hedderbilde.jpg");
 background-size: 100%;
+=======
+background-image: url("../Image/hedderbilde-sale.jpg");
+>>>>>>> Stashed changes
 background-repeat: no-repeat;
 min-height: 90vh;
 position: relative;
@@ -279,7 +283,7 @@ top:1900px;
 }
 .Newsphoto{
 
-background-image: url("../Image/newsbackground.png");
+background-image: url("../Image/bacground-news.png");
 background-size: 1920px;
 background-repeat: no-repeat;
 min-height: 60vh;
@@ -310,9 +314,56 @@ margin-top: 10px;
 }
 /*the footer*/
 
+.over-the-footer {
+    width: 1500px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.info-company, a {
+
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+
+.info-company {
+
+    width: 100px;
+}
+
+
+
+
+
+.instagram img, .telephon img, .facbook img, .profill img {
+
+    height: 40px;
+    width: auto;
+}
+
+.faq, .return, .shipping-footer, .about, .help {
+
+    padding-bottom: 20px;
+}
+
+.sosial-media-icon, img {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+/*
+
 .thefooter {
     display: flex;
-    flex-flow: row ; /*flex-direction flex-wrap*/
+    flex-flow: row ; /*flex-direction flex-wrap
     justify-content: center;
     margin-bottom: 20px;
 }
@@ -341,7 +392,8 @@ align-content: center;
 
 .person{
     margin-left: 20px;
-}
+} */
+
 
 /*shipping.html*/
 
@@ -352,12 +404,12 @@ align-content: center;
     background-repeat: no-repeat;
 }
 
-.shipping {
+.shipping, .eco-friendly, .top-hedding {
     display: flex;
     font-size: 30px;
 }
 
-.shipping, h1 {
+.shipping, .eco-friendly, .top-hedding, h1, h2 {
     justify-content: center;
     color: #0A3641;
     font-weight: lighter;
@@ -371,22 +423,22 @@ hr {
     width: 600px;
 }
 
-.mail-driver-photo, .return-icon{
+.mail-driver-photo, .return-icon, .eco-icon, .icon-photo {
  display: flex;
 }
 
-.mail-driver-photo, .return-icon, img {
+.mail-driver-photo, .return-icon, .eco-icon, .icon-photo, img {
     justify-content: center;
 }
 
-.mail-driver-photo img, .return-icon img {
-    width: 350px;
+.mail-driver-photo img, .return-icon img, .eco-icon img, .icon-photo img {
+    width: 200px;
     height: auto;
     margin-top: 60px;
 }
 
 
-.mail-driver-info, p {
+.iconinfo, p {
     color: #8F4F14;
     font-size: 15px;
     width: 400px;
@@ -394,6 +446,47 @@ hr {
     margin-right: auto;
     margin-top: 40px;
 }
+
+.free h2{
+    color: #8F4F14;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.min-hedding, h2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    color:#0A3641;
+    font-weight: lighter;
+    font-size: 30px;
+    width: auto;
+    padding-top: 25px;
+}
+
+.rainforist, .rainprof {
+    padding-bottom: 150px;
+}
+
+.hedding-eco {
+background-image: url("../Image/eco-friendly-hedding.jpg");
+background-size: cover;
+    min-height: 70vh;
+    background-repeat: no-repeat;}
+
+    /*material.html*/
+
+    .material-hedding {
+
+        background-image: url("../Image/material-hedding01.jpg");
+        background-size: cover;
+        min-height: 70vh;
+        background-repeat: no-repeat;
+    }
 
 /*the mobil view*/
 @media only screen and (max-width: 600px){
@@ -409,10 +502,11 @@ hr {
     }
 
     .profilicon {
-        margin-right: -30px;
+        margin-right: -70px;
     }
 
     .srcbox textarea {
+
         width: 250px;
         height: 20px;
     }
@@ -447,11 +541,11 @@ hr {
 
     .logo img {
 
-        width: 200px;
+        width: 150px;
         height: auto;
     }
 
-    .mail-photo{
+    .mail-photo, .hedding-eco, .material-hedding{
         min-height: 30vh;
     }
 
