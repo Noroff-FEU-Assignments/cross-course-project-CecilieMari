@@ -91,6 +91,7 @@ html {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        z-index: 1000;
       }
       
       li {
@@ -113,9 +114,9 @@ html {
        cursor: pointer;
          }
 
-li:focus-within a {
-  outline: none;
-}
+      li:focus-within a {
+      outline: none;
+         }
       
       ul li ul {
         background:#07728c;
@@ -145,7 +146,7 @@ li:focus-within a {
 
       .dropdown {
 
-        width: 20px;;
+        width: 20px;
       }
 
 
@@ -438,7 +439,7 @@ background-size: cover;
     }
 
 /*the mobil view*/
-@media only screen and (max-width: 600px){}
+@media only screen and (max-width: 600px){
 
     .profilicon img, .kasseicon img {
 
@@ -464,11 +465,14 @@ background-size: cover;
         height: 130px;
     }
 
-    .over-the-footer {
-        width: 300px;
+
+    hr {
+        width: 400px;
     }
 
-@media only screen and (max-width: 700px) {}
+     }
+
+@media only screen and (max-width: 700px) {
     body {
       background-color: lightblue;
     }
@@ -507,20 +511,18 @@ background-size: cover;
         font-size: 25px;
     }
 
-    hr {
-        width: 400px;
-    }
 
     .mail-driver-photo img, .return-icon img{
         width: 200px;
     }
 
-    .over-the-footer{
-        width: 600px;
     }
 
-    .matarial-texst {
+       @media only screen and (max-width: 1499px){
+           .over-the-footer {
+            width: 300px; }
+            
+            .matarial-texst {
+            font-size: 5rem;}
         
-        font-size: 5rem;
-    }
-
+        }
