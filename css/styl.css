@@ -473,6 +473,7 @@ background-size: cover;
     .iconinfo, p {
 
         font-size: 12px;
+        width: 300px;
     }
 
      }
@@ -528,6 +529,6 @@ background-size: cover;
             width: 300px; }
             
             .matarial-texst {
-            font-size: 5rem;}
+            font-size: 4rem;}
         
         }
