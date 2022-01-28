@@ -519,15 +519,8 @@ background-size: cover;
         width: 600px;
     }
 
-    @media only screen and (max-width: 1000px){}
-
-    .over-the-footer {
-
-        width: 700px;
-    }
-
-    .material-texst {
+    .matarial-texst {
         
-        font-size: 10rem;
+        font-size: 5rem;
     }
 
