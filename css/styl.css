@@ -467,7 +467,12 @@ background-size: cover;
 
 
     hr {
-        width: 400px;
+        width: 300px;
+    }
+
+    .iconinfo, p {
+
+        font-size: 12px;
     }
 
      }
