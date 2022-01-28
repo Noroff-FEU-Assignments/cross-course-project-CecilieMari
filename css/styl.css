@@ -149,140 +149,6 @@ html {
         width: 20px;
       }
 
-
-.salphoto {
-<<<<<<< Updated upstream
-background-image: url("../Image/hedderbilde.jpg");
-background-size: 100%;
-=======
-background-image: url("../Image/hedderbilde-sale.jpg");
->>>>>>> Stashed changes
-background-repeat: no-repeat;
-min-height: 90vh;
-position: relative;
-overflow: visible;
-}
-
-
-.salphoto-content {
-
-    font-size: 350px;
-    color: white;
-    position: absolute;
-    text-align: center;
-    top: -250px;
-    left: 910px;
-    font-family: 'Arima Madurai', cursive;
-    margin: 0em;
-}
-
-
-.categorys {
-    max-width: 1920px;
-    display: flex;
-    flex-flow: row ; /*flex-direction flex-wrap*/
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-
-
-.hiking-boots .jackets .hiking-gere {
-  
-    background-repeat: no-repeat;    
-}
-
-.parent02 {
-    max-width: 1920px;
-    display: flex;
-    flex-flow: row ; /*flex-direction flex-wrap*/
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.material {
-    position: relative;
-}
-
-.mail {
-background-color: #8F4F14;
-margin-left: 10px;
-width: -webkit-fill-available;
-margin-right: 20px;
-margin-bottom: 2px;
-font-family: 'Roboto light';
-    font-size: 50px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.email{
-    position: absolute;
-    top: 2100px;
-    left: 1060px;
-}
-
-.cta {
-    position: absolute;
-    top: 2213px;
-    left: 1350px;
-    outline-style: solid;
-    outline-width: medium;
-    outline-color: #54838F;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 40px;
-}
-
-.texsta {
-    text-decoration: none;
-    color: black;
-}
-/*til html siden
-h2{
-
-position: absolute;
-color: white;
-left: 1350px;
-top:1900px;
-*/
-
-.Newsphoto{
-
-background-image: url("../Image/bacground-news.png");
-background-size: 1920px;
-background-repeat: no-repeat;
-min-height: 60vh;
-position: relative;
-margin-top: 10px;
-}
-
-.News-content {
-    font-size: 330px;
-    color: white;
-    position: absolute;
-    text-align: center;
-    top: -100px;
-    left: 450px;
-    font-family: 'Arima Madurai', cursive;
-}  
-
-.parent03 {
-    margin: 10px;
-    padding: 30px;
-    height: 395px;
-    max-width: 1920px;
-    display: flex;
-    flex-flow: row ; /*flex-direction flex-wrap*/
-    justify-content: space-between;
-    margin-top: 200px;
-
-}
 /*the footer*/
 
 .over-the-footer {
@@ -304,10 +170,6 @@ margin-top: 10px;
     align-items: center;
     
 }
-
-
-
-
 
 .instagram img, .telephon img, .facbook img, .profill img {
 
@@ -331,6 +193,46 @@ margin-top: 10px;
     margin-bottom: 20px;
 
 }
+
+/*index.html*/
+
+  .sale-hedding{
+
+    background-image: url("../Image/hedderbilde-sale.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+  }
+
+  .sale-texst {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 65%;
+  transform: translate( -50%, -50% );
+  font-size: 20rem;
+  font-family: 'Arima Madurai', sans-serif;
+  font-weight:bold;
+}
+
+.tre-categorys {
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tre-categorys img{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
 
 
 /*shipping.html*/
@@ -517,14 +419,29 @@ background-size: cover;
         font-size: 25px;
     }
 
+    .tre-categorys img {
+
+        height: 270px;
+        width: auto;
+    }
+
 
     .mail-driver-photo img, .return-icon img{
         width: 200px;
     }
 
+
+    .sale-hedding {
+        min-height: 40vh;
+    }
+
     }
 
        @media only screen and (max-width: 1499px){
+           .sale-texst {
+               font-size: 11rem; 
+               left: 50%;
+           }
            .over-the-footer {
             width: 300px; }
             
