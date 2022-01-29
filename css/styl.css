@@ -208,7 +208,7 @@ html {
   .sale-texst {
   position: absolute;
   color: white;
-  top: 50%;
+  top: 60%;
   left: 65%;
   transform: translate( -50%, -50% );
   font-size: 20rem;
@@ -220,20 +220,182 @@ html {
 
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  
 }
 
-.tre-categorys img{
+.hiking-boots {
 
-    padding-left: 10px;
-    padding-right: 10px;
+    background-image: url("../Image/Hikingboots.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    width: 554px;
+    height: 461px;
+    margin-top: 10px;
 }
 
+.hiking-tekst{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    color: white;
+    transform: translate( -50%, -50% );
+    
+}
+
+.jackets {
+
+    background-image: url("../Image/jackets.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    width: 687px;
+    height: 461px;
+    margin-top: 10px;
+}
+
+.jacet-texst {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    color: white;
+    transform: translate( -50%, -50% );
+    
+}
+
+.hiking-gere {
+
+    background-image: url("../Image/hiking-gerar.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    width: 554px;
+    height: 461;
+    margin-top: 10px;
+}
+
+.hiking-texst {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    color: white;
+    transform: translate( -50%, -50% );
+}
+
+.information-mail {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+}
+
+.material-img {
+    background-image: url("../Image/material-hedding01.jpg");
+    background-size: cover;
+    
+    position: relative;
+    background-repeat: no-repeat;
+    width: 691px;
+    height: 461px;
+    margin-top: 10px;
+}
+
+.link {
+
+    color: white;
+}
+
+.material-tekst02{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: white;
+    font-size: 150px;
+  }
+
+.sign-up-mail {
+
+    background-image: url("../Image/bakgrund\ mail.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 461px;
+    width: 1136px;
+    margin-top: 10px;
+}
+  .news-letter{
+
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+      color: white;
+      font-size: 70px;
+  }
+
+  .email {
+
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+      width: 900px;
+      height: 50px;
+  }
+
+  .email-button {
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 381px;
+    height: 78px;
+    border:2px solid #0A3641;
+    font-size: 40px;
+    background-color: transparent;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
 
 
+  }
 
+  .mail-eco-return {
+      display: flex;
+  }
+
+  .icon-shipping {
+ background-image: url("../Image/mail-driver.png");
+ background-size: cover;
+    
+    position: relative;
+    background-repeat: no-repeat;
+    height: 359px;
+    width: auto;
+
+
+  }
 
 /*shipping.html*/
 
@@ -378,6 +540,17 @@ background-size: cover;
         width: 300px;
     }
 
+    .hiking-tekst, .jacet-texst, .hiking-gere, .material-tekst02, .news-letter {
+        font-size: 70px;
+    }
+
+    .hiking-boots, .jackets, .hiking-gere, .material-img, .sign-up-mail {
+        margin-top: 10px;
+        
+
+
+    }
+
      }
 
 @media only screen and (max-width: 700px) {
@@ -437,9 +610,9 @@ background-size: cover;
 
     }
 
-       @media only screen and (max-width: 1499px){
+       @media only screen and (max-width: 1024px){
            .sale-texst {
-               font-size: 11rem; 
+               font-size: 10rem; 
                left: 50%;
            }
            .over-the-footer {
@@ -447,5 +620,15 @@ background-size: cover;
             
             .matarial-texst {
             font-size: 4rem;}
+
+            .email {
+                width: auto;
+            }
+
+            .email-button {
+                width: auto;
+                height: 40px;
+                font-size: 20px;
+                       }
         
         }
