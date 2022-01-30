@@ -319,7 +319,7 @@ html {
     margin-top: 10px;
 }
 
-.link {
+.link, .link-hedding {
 
     color: white;
 }
@@ -377,25 +377,83 @@ html {
     background-color: transparent;
     font-weight: lighter;
     font-family: 'Roboto', sans-serif;
-
-
   }
+
+  .news-img {
+      background-image: url("../Image/bacground-news.png");
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 90vh;
+      margin-top: 20px;
+         }
+
+   .news-texst  {
+
+      position: absolute;
+      color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+      font-size: 20rem;
+      font-family: 'Arima Madurai', sans-serif;
+      font-weight: bold;
+    
+      }
 
   .mail-eco-return {
       display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 150px;
+      margin-right: 50px;
+      margin-left: 50px;
+      margin-bottom: 250px;
+
+        }
+
+
+  .link-mail-eco-return {
+      color: #8F4F14;
+      }
+
+
+  .icon-shipping-texst, .icon-return-texst, .icon-eco-texst {
+
+    position: absolute;
+    top: 114%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-size: 30px;
+    width: 250px;
   }
 
   .icon-shipping {
  background-image: url("../Image/mail-driver.png");
- background-size: cover;
-    
+ width: 359px;
+  }
+
+  .icon-shipping, .icon-return, .icon-eco{
+    background-size: cover;
     position: relative;
     background-repeat: no-repeat;
     height: 359px;
-    width: auto;
-
-
+    
   }
+
+  .icon-return {
+      background-image: url("../Image/return-icon-01.png");
+      width: 314px ;
+  }
+
+  .icon-eco {
+      background-image: url("../Image/Eco-icon.png");
+      width: 395px;
+  
+    }
+
+
 
 /*shipping.html*/
 
@@ -440,6 +498,7 @@ hr {
 }
 
 
+
 .iconinfo, p {
     color: #8F4F14;
     font-size: 15px;
@@ -475,8 +534,8 @@ hr {
 }
 
 .hedding-eco {
-background-image: url("../Image/eco-friendly-hedding.jpg");
-background-size: cover;
+    background-image: url("../Image/eco-friendly-hedding.jpg");
+    background-size: cover;
     min-height: 70vh;
     background-repeat: no-repeat;}
 
@@ -546,9 +605,6 @@ background-size: cover;
 
     .hiking-boots, .jackets, .hiking-gere, .material-img, .sign-up-mail {
         margin-top: 10px;
-        
-
-
     }
 
      }
@@ -604,16 +660,40 @@ background-size: cover;
     }
 
 
-    .sale-hedding {
-        min-height: 40vh;
+    
+    
+    
+    .news-letter {
+                width: 300px;
+                font-size: 40px;
+            }
+            
+    .sign-up-mail {
+                height: 370px;
+            }  
+            
+            .email-button {
+                width: auto;
+                height: 40px;
+                font-size: 20px;
+                       }
     }
 
-    }
 
-       @media only screen and (max-width: 1024px){
-           .sale-texst {
-               font-size: 10rem; 
+
+       @media only screen and ( max-width: 1024px){
+           .sale-texst, .news-texst {
+               font-size: 8rem; 
                left: 50%;
+           }
+
+           .hiking-boots, .jackets, .hiking-gere, .material-img {
+               min-height: 40vh;
+               justify-items: center;
+           }
+
+           .news-img, .sale-hedding {
+               min-height: 40vh;
            }
            .over-the-footer {
             width: 300px; }
@@ -622,13 +702,19 @@ background-size: cover;
             font-size: 4rem;}
 
             .email {
-                width: auto;
+                width: 300px;
+            }
+            .icon-shipping, .icon-return, .icon-eco {
+                
+                display: none;
             }
 
-            .email-button {
-                width: auto;
-                height: 40px;
-                font-size: 20px;
-                       }
-        
+            .mail-eco-return{
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .tre-categorys, .information-mail{
+                justify-content: center;
+            }
         }
