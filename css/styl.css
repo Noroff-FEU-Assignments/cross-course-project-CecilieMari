@@ -561,8 +561,77 @@ hr {
         font-weight:bold;
     }
 
+    /*member.html*/
+
+    .member-pag-hedding {  
+        background-image: url("../Image/member-hedding02.jpg");
+        background-size: cover;
+        min-height: 70vh;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .member-hedding{
+        color: #0A3641;
+    }
+
+    .informasjon-member{
+        display: flex;
+        justify-items: center;
+        flex-flow: column;
+        position: relative;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .member-offer, .news-letter-hedding {
+        color: #0A3641;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .member-forms{
+        display: flex;
+        flex-flow: column;
+        margin-top: 40px;
+        align-items: center;
+        
+      }
+
+      input { 
+        margin-bottom: 10px;
+        width: 400px;
+        height: 26px;
+      }
+    
+      .form-holder{
+          background-color: #8F4F14;
+          display: flex;
+          flex-flow: column;
+          padding: 30px;
+      }
+
+      .sign-up{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 65px;
+        align-items: center;
+        margin-top: 60px;
+        font-size: 30px;
+        background-color: #07728c;
+        border: solid #0A3641; 
+      }
+
 /*the mobil view*/
 @media only screen and (max-width: 600px){
+
+    input { 
+        width: 250px;
+        height: 26px;
+      }
 
     .profilicon img, .kasseicon img {
 
@@ -577,9 +646,7 @@ hr {
     .profilicon {
         margin-right: -70px;
     }
-
     .srcbox textarea {
-
         width: 250px;
         height: 20px;
     }
@@ -588,13 +655,11 @@ hr {
         height: 130px;
     }
 
-
     hr {
         width: 300px;
     }
 
     .iconinfo, p {
-
         font-size: 12px;
         width: 300px;
     }
@@ -634,7 +699,6 @@ hr {
     }
 
     .logo img {
-
         width: 150px;
         height: auto;
     }
@@ -644,25 +708,18 @@ hr {
     }
 
     .shipping, h1 {
-
         font-size: 25px;
     }
 
     .tre-categorys img {
-
         height: 270px;
         width: auto;
     }
-
 
     .mail-driver-photo img, .return-icon img{
         width: 200px;
     }
 
-
-    
-    
-    
     .news-letter {
                 width: 300px;
                 font-size: 40px;
@@ -678,9 +735,6 @@ hr {
                 font-size: 20px;
                        }
     }
-
-
-
        @media only screen and ( max-width: 1024px){
            .sale-texst, .news-texst {
                font-size: 8rem; 
@@ -692,7 +746,8 @@ hr {
                justify-items: center;
            }
 
-           .news-img, .sale-hedding {
+             .member-pag-hedding,
+             .news-img, .sale-hedding  {
                min-height: 40vh;
            }
            .over-the-footer {
