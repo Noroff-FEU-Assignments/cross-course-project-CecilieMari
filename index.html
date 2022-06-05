@@ -24,7 +24,7 @@
             <img src="./Image/RainyDays_Logo.png" alt="logo">
         </div>
         <div class="profilicon">
-            <img src="./Image/profil bilde.png" alt="profilicon">
+            <a href="new-member.html">  <img src="./Image/profil bilde.png" alt="profilicon"> </a>
         </div>
         <div class="kasseicon">
             <img src="./Image/001-shopping-cart.png" alt="kasseicon">
@@ -37,26 +37,38 @@
        
     </form>
 
-    <nav class="navbarstyling">
+    <div class="info">
+      <button class="menbutton, navbar-button" href=" ">Men</button>
+      <button class="wommenbutton, navbar-button" href=" ">Wommen</button>
+      <div class="dropdown">
+          <button class="dropbutton" onclick="show()">
+              Info
+          </button>
+          <div id="courses_id" class="courses">
+              <li><a href=" "> Material </a></li>
+              <li><a href=" "> Shipping </a></li>
+              <li><a href=" "> Member </a></li>
+              <li><a href=" "> Eco Friendly </a></li>
+          </div>
+      </div>
+      <button class="bootsbutton, navbar-button" href=" ">Boots</button>
+      <button class="salebutton, navbar-button" href=" ">Sale</button>
+  </div>
 
-        <ul>
-            <li> <a href="" class="Men">Men</a></li>
-            <li> <a href="" class="Wommen">Wommen</a></li>
-            <li> <a href=""  aria-haspopup="true">  Info</a>  
-               <ul class="dropdown" aria-label="submenu">
-                   <li> <a href="material.html"> Matarial </a></li>
-                   <li> <a href="shipping.html"> Shipping </a></li>
-                   <li> <a href="member.html"> Member </a></li>
-                   <li> <a href="Eco.html"> Eco Friendly </a></li>
-               </ul>
+  <!-- hamburger menu-->
 
-            </li> 
-
-            <li> <a href="" class="Boots">Boots</a></li>
-            <li> <a href="" class="Sale">Sale</a></li>
-        </ul>
-
-    </nav> 
+  <input type="checkbox" id="menu-checkbox"/>
+  <label for="menu-checkbox"><img src="./image/menu-mobil.png" class="icon-hambureger" alt="hambureger icon menu"> </label>
+  <nav class=""> 
+      <a href="men.html"> Men </a>
+      <a href=" " > Wommen </a>
+      <a href=" "> Boots </a>
+      <a href=" "  > Sale </a>
+      <a href="material.html"  > Material </a>
+      <a href="shipping.html"  > Shipping </a>
+      <a href="member.html"  > Member </a>
+      <a href="Eco.html"  > Eco Friendly </a>
+    </nav>
 
 </header>
 
@@ -197,6 +209,7 @@
 
 </footer>
 
+<script src="js/rainydays.js"> </script>
 
 </body> 
 

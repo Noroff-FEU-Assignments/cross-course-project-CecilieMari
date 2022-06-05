@@ -1,0 +1,433 @@
+
+html {
+
+    padding: 10px;
+    align-content: center;
+}
+
+    body {
+        margin: auto;
+        max-width: 1920px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+/*hedding*/
+.parent {
+    background-color: #07728c ;
+    height: 200px;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo {
+
+    margin-left: auto;
+    position: absolute;
+}
+
+.logo img {
+
+    width: 300px;
+    height: auto;
+}
+
+.profilicon {
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+.profilicon img {
+    width: 40px;
+    height: auto;
+}
+
+.kasseicon img {
+    width: 40px;
+    height: auto;
+}
+.kasseicon {
+    margin-left: 50px;
+    justify-content: flex-end;
+}
+
+.srcbox{
+    display: flex;
+    justify-content: center;
+    background-color: #07728c ;
+}
+.srcbox textarea {
+    width: 500px;
+    height: 40px;
+    background-image: url("../Image/glass.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; }
+
+    /*nav*/
+
+    .info {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        background-color: #07728c;
+        height: 53px;
+    }
+
+    .navbar-button {
+        width: 200px;
+        height: 53px;
+    }
+
+    .dropbutton, .navbar-button {
+        background-color: #07728c;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+        border: 1px solid #ffff;
+    }
+
+    .courses {
+        width: 200px;
+    }
+
+    .courses li {
+        padding: 12px 16px;
+        text-decoration: none;
+        border: 1px solid black;
+        border-bottom: 0px;
+        list-style: none;
+    }
+
+    .courses li a {
+        text-decoration: none;
+        color: #8F4F14;
+        display: block;
+        padding: 10px;   
+    }
+
+    .courses li:hover {
+        background-color: #07728c;
+        color: #ffff;
+    }
+
+   
+
+
+#menu-checkbox {
+    display: none;
+}
+
+/*
+
+første eksempel på nav med javaskript 
+    nav{
+        overflow: hidden;
+        background-color: #07728c;
+        align-items: center;
+    }
+
+    nav a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbutton {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+
+    }
+
+    nav a:hover, .dropdown:hover .dropbutton, .dropbutton:focus {
+        background-color: aqua;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: brown;
+    }
+
+    .show {
+        display: block;
+    }
+*/
+
+
+
+
+
+
+   /*nav*/
+/*
+ header{
+    background-color: #284D9C;
+    position: relative;
+}
+nav, #menu-checkbox{
+    display: none;
+}
+#menu-checkbox:checked ~ nav{
+    display: block;
+}
+nav {
+    position: absolute;
+    background: #284D9C;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+nav .navbarstyling{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.icons-nav, .icon-hambureger{
+width: 30px;
+height: 30px;
+}
+.icon-hambureger {
+padding: 10px;
+} */
+
+
+
+/*the mobil view*/
+
+@media only screen and (min-width: 601px) {
+
+    #menu-checkbox {
+        display: none; }
+      
+    .icon-hambureger {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .info {
+        display: none;
+    }
+
+    header{
+        background-color: #07728c;
+        position: relative;
+    }
+    nav, #menu-checkbox{
+        display: none;
+    }
+    #menu-checkbox:checked ~ nav{
+        display: block;
+    }
+    nav {
+        position: absolute;
+        background: #fff;
+        padding: 10px 20px;
+        z-index: 1000;
+        
+    }
+    nav .navbarstyling{
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    .icon-hambureger{
+    width: 30px;
+    height: 30px;
+    }
+    .icon-hambureger {
+    padding: 10px;
+    }
+
+    input { 
+        width: 250px;
+        height: 26px;
+      }
+
+    .profilicon img, .kasseicon img {
+
+        width: 20px;
+        height: auto;
+    }
+
+    .kasseicon {
+        margin-right: 0px;
+    }
+
+    .profilicon {
+        margin-right: -70px;
+    }
+    .srcbox textarea {
+        width: 250px;
+        height: 20px;
+    }
+
+    .parent {
+        height: 130px;
+    }
+
+    hr {
+        width: 300px;
+    }
+
+    .iconinfo, p {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .hiking-tekst, .jacet-texst, .hiking-gere, .material-tekst02, .news-letter {
+        font-size: 70px;
+    }
+
+    .hiking-boots, .jackets, .hiking-gere, .material-img, .sign-up-mail {
+        margin-top: 10px;
+    }
+
+     }
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .salphoto {
+        background-size: contain;
+    }
+
+    .categorys {
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    /*
+
+    .navbarstyling li {
+    
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    ul .dropdown {
+        width: 200px;
+    } */
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .mail-photo, .hedding-eco, .material-hedding{
+        min-height: 30vh;
+    }
+
+    .shipping, h1 {
+        font-size: 25px;
+    }
+
+    .tre-categorys img {
+        height: 270px;
+        width: auto;
+    }
+
+    .mail-driver-photo img, .return-icon img{
+        width: 200px;
+    }
+
+    .news-letter {
+                width: 300px;
+                font-size: 40px;
+            }
+            
+    .sign-up-mail {
+                height: 370px;
+            }  
+            
+            .email-button {
+                width: auto;
+                height: 40px;
+                font-size: 20px;
+                       }
+    }
+       @media only screen and ( max-width: 1024px){
+           .sale-texst, .news-texst {
+               font-size: 8rem; 
+               left: 50%;
+           }
+
+           .hiking-boots, .jackets, .hiking-gere, .material-img {
+               min-height: 40vh;
+               justify-items: center;
+           }
+
+             .member-pag-hedding,
+             .news-img, .sale-hedding  {
+               min-height: 40vh;
+           }
+           .over-the-footer {
+            width: 300px; }
+            
+            .matarial-texst {
+            font-size: 4rem;}
+
+            .email {
+                width: 300px;
+            }
+            .icon-shipping, .icon-return, .icon-eco {
+                
+                display: none;
+            }
+
+            .mail-eco-return{
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .tre-categorys, .information-mail{
+                justify-content: center;
+            }
+        }

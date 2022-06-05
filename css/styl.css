@@ -10,6 +10,7 @@ html {
         font-family: 'Roboto', sans-serif;
     }
 
+
 /*the nav and hedding*/
 .parent {
     background-color: #07728c ;
@@ -68,86 +69,62 @@ html {
     background-repeat: no-repeat;
     background-position: right; }
 
-    header {
-        background-color: #07728c;
-    }
-    a {
-        text-decoration: none;
-      }
-      
-      nav {
-        font-family: 'Roboto', sans-serif;
+
+    /*nav bar */
+    
+      .info {
+        height: 400px;
         display: flex;
         justify-content: center;
-      }
-      
-      ul {
-        background: #07728c;
-        list-style: none;
-        margin: 0;
-        padding-left: 0;
-        font-size: 25px;;
-        width:1920px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        z-index: 1000;
-      }
-      
-      li {
-        color: #fff;
-        background: #07728c;
-        display: block;
-        float: left;
-        padding: 1rem;
-        position: relative;
+        background-color: #07728c;
+        height: 53px;
+    }
+
+    .navbar-button {
+        width: 200px;
+        height: 53px;
+    }
+
+    .dropbutton, .navbar-button {
+        background-color: #07728c;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+        border: 1px solid #ffff;
+    }
+
+    .courses {
+        width: 200px;
+    }
+
+    .courses li {
+        padding: 12px 16px;
         text-decoration: none;
-        transition-duration: 0.5s;
-      }
-        
-      li a {
-        color: black;
-      }
-      li:hover,
-      li:focus-within {
-       background:#07728c;
-       cursor: pointer;
-         }
+        border: 1px solid black;
+        border-bottom: 0px;
+        list-style: none;
+    }
 
-      li:focus-within a {
-      outline: none;
-         }
-      
-      ul li ul {
-        background:#07728c;
-        visibility: hidden;
-        opacity: 0;
-        min-width: 5rem;
-        position: absolute;
-        transition: all 0.5s ease;
-        margin-top: 1rem;
-        left: 0;
-        display: none;
-      }
-      
-      ul li:hover > ul,
-      ul li:focus-within > ul,
-      ul li ul:hover,
-      ul li ul:focus {
-         visibility: visible;
-         opacity: 1;
-         display: block;
-      }
-      
-      ul li ul li {
-        clear: both;
-        width: 150px;
-      }
+    .courses li a {
+        text-decoration: none;
+        color: #8F4F14;
+        display: block;
+        padding: 10px;   
+    }
 
-      .dropdown {
+    .courses li:hover {
+        background-color: #07728c;
+        color: #ffff;
+    }
 
-        width: 20px;
-      }
+   
+
+
+#menu-checkbox {
+    display: none;
+}
 
 /*the footer*/
 
@@ -625,151 +602,203 @@ hr {
         border: solid #0A3641; 
       }
 
-/*the mobil view*/
-@media only screen and (max-width: 600px){
+      /*the mobilll veue*/
 
-    input { 
-        width: 250px;
-        height: 26px;
-      }
+        @media only screen and (min-width: 601px) {
 
-    .profilicon img, .kasseicon img {
-
-        width: 20px;
-        height: auto;
-    }
-
-    .kasseicon {
-        margin-right: 0px;
-    }
-
-    .profilicon {
-        margin-right: -70px;
-    }
-    .srcbox textarea {
-        width: 250px;
-        height: 20px;
-    }
-
-    .parent {
-        height: 130px;
-    }
-
-    hr {
-        width: 300px;
-    }
-
-    .iconinfo, p {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    .hiking-tekst, .jacet-texst, .hiking-gere, .material-tekst02, .news-letter {
-        font-size: 70px;
-    }
-
-    .hiking-boots, .jackets, .hiking-gere, .material-img, .sign-up-mail {
-        margin-top: 10px;
-    }
-
-     }
-
-@media only screen and (max-width: 700px) {
-    body {
-      background-color: lightblue;
-    }
-
-    .salphoto {
-        background-size: contain;
-    }
-
-    .categorys {
-        flex-flow: column;
-        justify-content: center;
-    }
-
-    .navbarstyling li {
-    
-        margin: 5px;
-        font-size: 15px;
-    }
-
-    ul .dropdown {
-        width: 200px;
-    }
-
-    .logo img {
-        width: 150px;
-        height: auto;
-    }
-
-    .mail-photo, .hedding-eco, .material-hedding{
-        min-height: 30vh;
-    }
-
-    .shipping, h1 {
-        font-size: 25px;
-    }
-
-    .tre-categorys img {
-        height: 270px;
-        width: auto;
-    }
-
-    .mail-driver-photo img, .return-icon img{
-        width: 200px;
-    }
-
-    .news-letter {
-                width: 300px;
-                font-size: 40px;
-            }
-            
-    .sign-up-mail {
-                height: 370px;
-            }  
-            
-            .email-button {
-                width: auto;
-                height: 40px;
-                font-size: 20px;
-                       }
-    }
-       @media only screen and ( max-width: 1024px){
-           .sale-texst, .news-texst {
-               font-size: 8rem; 
-               left: 50%;
-           }
-
-           .hiking-boots, .jackets, .hiking-gere, .material-img {
-               min-height: 40vh;
-               justify-items: center;
-           }
-
-             .member-pag-hedding,
-             .news-img, .sale-hedding  {
-               min-height: 40vh;
-           }
-           .over-the-footer {
-            width: 300px; }
-            
-            .matarial-texst {
-            font-size: 4rem;}
-
-            .email {
-                width: 300px;
-            }
-            .icon-shipping, .icon-return, .icon-eco {
-                
+            #menu-checkbox {
+                display: none; }
+              
+            .icon-hambureger {
                 display: none;
             }
-
-            .mail-eco-return{
-                margin-top: 0px;
-                margin-bottom: 0px;
+        
+            nav {
+                display: none;
             }
-
-            .tre-categorys, .information-mail{
+        
+        }
+        
+        @media only screen and (max-width: 600px){
+        
+            .info {
+                display: none;
+            }
+        
+            header{
+                background-color: #07728c;
+                position: relative;
+            }
+            nav, #menu-checkbox{
+                display: none;
+            }
+            #menu-checkbox:checked ~ nav{
+                display: block;
+            }
+            nav {
+                position: absolute;
+                background: #fff;
+                padding: 10px 20px;
+                z-index: 1000;
+                
+            }
+            nav .navbarstyling{
+                display: block;
+                color: white;
+                text-decoration: none;
+            }
+            .icon-hambureger{
+            width: 30px;
+            height: 30px;
+            }
+            .icon-hambureger {
+            padding: 10px;
+            }
+        
+            input { 
+                width: 250px;
+                height: 26px;
+              }
+        
+            .profilicon img, .kasseicon img {
+        
+                width: 20px;
+                height: auto;
+            }
+        
+            .kasseicon {
+                margin-right: 0px;
+            }
+        
+            .profilicon {
+                margin-right: -70px;
+            }
+            .srcbox textarea {
+                width: 250px;
+                height: 20px;
+            }
+        
+            .parent {
+                height: 130px;
+            }
+        
+            hr {
+                width: 300px;
+            }
+        
+            .iconinfo, p {
+                font-size: 12px;
+                width: 300px;
+            }
+        
+            .hiking-tekst, .jacet-texst, .hiking-gere, .material-tekst02, .news-letter {
+                font-size: 70px;
+            }
+        
+            .hiking-boots, .jackets, .hiking-gere, .material-img, .sign-up-mail {
+                margin-top: 10px;
+            }
+        
+             }
+        
+        @media only screen and (max-width: 700px) {
+            body {
+              background-color: lightblue;
+            }
+        
+            .salphoto {
+                background-size: contain;
+            }
+        
+            .categorys {
+                flex-flow: column;
                 justify-content: center;
             }
-        }
+        
+            /*
+        
+            .navbarstyling li {
+            
+                margin: 5px;
+                font-size: 15px;
+            }
+        
+            ul .dropdown {
+                width: 200px;
+            } */
+        
+            .logo img {
+                width: 150px;
+                height: auto;
+            }
+        
+            .mail-photo, .hedding-eco, .material-hedding{
+                min-height: 30vh;
+            }
+        
+            .shipping, h1 {
+                font-size: 25px;
+            }
+        
+            .tre-categorys img {
+                height: 270px;
+                width: auto;
+            }
+        
+            .mail-driver-photo img, .return-icon img{
+                width: 200px;
+            }
+        
+            .news-letter {
+                        width: 300px;
+                        font-size: 40px;
+                    }
+                    
+            .sign-up-mail {
+                        height: 370px;
+                    }  
+                    
+                    .email-button {
+                        width: auto;
+                        height: 40px;
+                        font-size: 20px;
+                               }
+            }
+               @media only screen and ( max-width: 1024px){
+                   .sale-texst, .news-texst {
+                       font-size: 8rem; 
+                       left: 50%;
+                   }
+        
+                   .hiking-boots, .jackets, .hiking-gere, .material-img {
+                       min-height: 40vh;
+                       justify-items: center;
+                   }
+        
+                     .member-pag-hedding,
+                     .news-img, .sale-hedding  {
+                       min-height: 40vh;
+                   }
+                   .over-the-footer {
+                    width: 300px; }
+                    
+                    .matarial-texst {
+                    font-size: 4rem;}
+        
+                    .email {
+                        width: 300px;
+                    }
+                    .icon-shipping, .icon-return, .icon-eco {
+                        
+                        display: none;
+                    }
+        
+                    .mail-eco-return{
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+        
+                    .tre-categorys, .information-mail{
+                        justify-content: center;
+                    }
+                }

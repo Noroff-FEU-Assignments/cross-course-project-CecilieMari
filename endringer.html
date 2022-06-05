@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/endringer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Assistant:wght@200&family=Dongle:wght@300&family=Nanum+Gothic&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="parent">
+            <div class="logo">
+                <img src="./Image/RainyDays_Logo.png" alt="logo">
+            </div>
+            <div class="profilicon">
+                <a href="new-member.html">  <img src="./Image/profil bilde.png" alt="profilicon"> </a>
+            </div>
+            <div class="kasseicon">
+                <img src="./Image/001-shopping-cart.png" alt="kasseicon">
+            </div>
+    
+        </div> 
+    
+    
+        <form class="srcbox"> 
+            <textarea id="message" class="texst" name="message"> </textarea>
+        </form>
+
+        <div class="info">
+            <button class="menbutton, navbar-button" href=" ">Men</button>
+            <button class="wommenbutton, navbar-button" href=" ">Wommen</button>
+            <div class="dropdown">
+                <button class="dropbutton" onclick="show()">
+                    Info
+                </button>
+                <div id="courses_id" class="courses">
+                    <li><a href=" "> Material </a></li>
+                    <li><a href=" "> Shipping </a></li>
+                    <li><a href=" "> Member </a></li>
+                    <li><a href=" "> Eco Friendly </a></li>
+                </div>
+            </div>
+            <button class="bootsbutton, navbar-button" href=" ">Boots</button>
+            <button class="salebutton, navbar-button" href=" ">Sale</button>
+        </div>
+
+        <!-- hamburger menu-->
+
+        <input type="checkbox" id="menu-checkbox"/>
+        <label for="menu-checkbox"><img src="./image/menu-mobil.png" class="icon-hambureger" alt="hambureger icon menu"> </label>
+        <nav class=""> 
+            <a href="exhibitions.html"> Men </a>
+            <a href="kids.html" > Wommen </a>
+            <a href="about.html"> Boots </a>
+            <a href="events.html"  > Sale </a>
+            <a href="events.html"  > Material </a>
+            <a href="events.html"  > Shipping </a>
+            <a href="events.html"  > Member </a>
+            <a href="events.html"  > Eco Friendly </a>
+          </nav>
+
+        <!-- 
+        <nav class="navbar"> 
+            <a href="men.html">Men</a>
+            <a href=" ">Wommen</a>
+            <div class="dropdown">
+                <button class="dropbutton" onclick="myFunction()">
+                    <i class="fa fa-caret-down"></i>
+                    Info
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href=" "> Material</a>
+                    <a href=" "> Shipping</a>
+                    <a href=" "> Member</a>
+                    <a href=" "> Eco Friendly</a>
+                </div>
+            </div>
+            <a href="men.html">Men</a>
+            <a href=" ">Wommen</a>
+        </nav> 
+    -->
+
+
+<!-- 
+        <input type="checkbox" id="menu-checkbox"/>
+        <label for="menu-checkbox"><img src="./image/menu-mobil.png" class="icon-hambureger" alt="hambureger icon menu"> </label>
+        <nav class=""> 
+            <a href=" " class="navbarstyling"> Men </a>
+            <a href=" " class="navbarstyling"> Wommen </a>
+            <a href=" " class="navbarstyling"> Info </a>
+            <a href=" " class="navbarstyling"> Boots </a>
+            <a href=" " class="navbarstyling"> Sale </a>
+          </nav>
+        -->
+
+    
+
+    </header>
+
+    <script src="js/rainydays.js"> </script>
+</body>
+</html>
